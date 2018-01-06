@@ -1,4 +1,4 @@
-# postcss-js-mixins
+# postcss-js-mixins [![Build Status](https://travis-ci.org/johnwatkins0/postcss-js-mixins.svg?branch=master)](https://travis-ci.org/johnwatkins0/postcss-js-mixins)
 
 Write CSS mixins in Javascript.
 
@@ -20,14 +20,14 @@ In your CSS, include an at rule with the `js-mixin` keyword followed by parenthe
 
 The file path resolves from the project root (i.e. the location of postcss.config.js and/or package.json). This can be overriden with the `rootDir` option passed via the PostCSS configuration (see below).
 
-Each mixin should be a separate JS module exporting a single function in a dialect of Javascript your version of node understands. The function must return a string (the CSS).
+Each mixin should be a separate JS module exporting a single function in a dialect of Javascript your version of Node understands. The function must return a string (the CSS).
 
 ### Example
 
 #### CSS
 
 ```CSS
-/* style.css */
+/* src/style.css */
 
 body {
   color: red;
@@ -64,6 +64,8 @@ module.exports = ({ columnCount }) => {
 #### Result
 
 ```CSS
+/* dist/style.css */
+
 body {
   color: red;
 }

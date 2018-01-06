@@ -1,0 +1,23 @@
+body {
+  color: red;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 75%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+main {
+  overflow: auto;
+}

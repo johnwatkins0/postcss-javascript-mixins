@@ -1,0 +1,11 @@
+body {
+  color: red;
+}
+
+@js-mixin (not-a-file) {
+  columnCount: 4;
+}
+
+main {
+  overflow: auto;
+}

@@ -5,13 +5,13 @@ Write CSS mixins in Javascript.
 ## Install
 
 ```
-npm install --save-dev postcss-js-mixins
+npm install --save-dev postcss-javascript-mixins
 ```
 
 OR
 
 ```
-yarn add --dev postcss-js-mixins
+yarn add --dev postcss-javascript-mixins
 ```
 
 ## Usage

@@ -1,4 +1,4 @@
-# postcss-js-mixins [![Build Status](https://travis-ci.org/johnwatkins0/postcss-js-mixins.svg?branch=master)](https://travis-ci.org/johnwatkins0/postcss-js-mixins)
+# postcss-javascript-mixins [![Build Status](https://travis-ci.org/johnwatkins0/postcss-js-mixins.svg?branch=master)](https://travis-ci.org/johnwatkins0/postcss-js-mixins)
 
 Write CSS mixins in Javascript.
 

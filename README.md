@@ -16,7 +16,7 @@ yarn add --dev postcss-js-mixins
 
 ## Usage
 
-In the CSS, include an at rule with the `js-mixin` keyword followed by parentheses containing the path to the JS file generating CSS. Optionally, also add a set of declarations that will be passed as an object to the JS function.
+In your CSS, include an at rule with the `js-mixin` keyword followed by parentheses with the path to the JS file generating CSS. Optionally, you may give the at rule a set of declarations that will be passed as an object to the JS function.
 
 The file path resolves from the project root (i.e. the location of postcss.config.js and/or package.json). This can be overriden with the `rootDir` option passed via the PostCSS configuration (see below).
 
@@ -59,6 +59,34 @@ module.exports = ({ columnCount }) => {
 
     return output;
 };
+```
+
+#### Result
+
+```CSS
+body {
+  color: red;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 75%;
+}
+
+.col-4 {
+  width: 100%;
+}
+
+main {
+  overflow: auto;
+}
 ```
 
 ### Options

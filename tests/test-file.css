@@ -1,9 +1,12 @@
 body {
-  color: red;
+  @js-mixin tests/makeTheme {
+    themeName: 'dark';
+  }
 }
 
-@js-mixin (tests/makeColumns) {
+@js-mixin tests/makeColumns {
   columnCount: 4;
+  padding: .75rem;
 }
 
 main {

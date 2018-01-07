@@ -39,13 +39,16 @@ test('Parsing a file importing nonexistent JS throws an error.', async done => {
     done();
 });
 
-test('Parsing a file without the error throws error.', async done => {
+test('Parsing a file without the at rule throws error.', async done => {
     const testContent = await getTestFile('test-file-without-rule.css');
 
     const processor = postcss(postcss.plugin('spacing-utils', jsMixins));
 
     try {
-        await processor.process(testContent, { from: 'undefined' });
+        await processor.process(testContent, {
+            from: 'undefined',
+            semicolon: true,
+        });
     } catch (e) {
         expect(e).toBe('@js-mixin at rule not found');
     }

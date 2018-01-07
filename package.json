@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "main": "dist/index.js",
   "description": "Write CSS mixins in Javascript.",
-  "keywords": ["postcss", "css", "mixins"],
+  "keywords": [
+    "postcss",
+    "css",
+    "mixins"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "babel --watch src --out-dir dist",
@@ -19,9 +23,11 @@
     "eslint": "^4.14.0",
     "eslint-config-postcss": "^2.0.2",
     "eslint-plugin-jest": "^21.5.0",
-    "jest": "^22.0.4"
+    "jest": "^22.0.4",
+    "stylelint-config-standard": "^18.0.0"
   },
   "dependencies": {
-    "postcss": "^6.0.16"
+    "postcss": "^6.0.16",
+    "stylelint": "^8.4.0"
   }
 }

@@ -30,7 +30,7 @@ Each mixin should be a separate JS module exporting a single function in a diale
 /* src/style.css */
 
 body {
-  @js-mixin tests/makeTheme {
+  @js-mixin mixins/makeTheme {
     themeName: 'dark';
   }
 }

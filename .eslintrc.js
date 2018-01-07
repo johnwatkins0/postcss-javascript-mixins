@@ -7,5 +7,6 @@ module.exports = {
         'comma-dangle': 0,
         quotes: 0,
         'operator-linebreak': 0,
+        'no-extra-parens': 0,
     },
 };
